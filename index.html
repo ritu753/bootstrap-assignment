@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>assignment</title>
+  </head>
+  <body>
+      <section>
+       <div class="sidenavbar">
+         <div class="logo">
+        <img src="logo.jpg">
+        <h3>Tac-Tic-Tac</h3>
+        </div>
+        <div class="sidemenu">
+          <i class="fa fa-pie-chart"></i>
+          <p>Dashboard</p>
+        </div>
+        <div class="sidemenu">
+            <i class="fa fa-file-code-o"></i>
+            <p>tactics vault</p>
+          </div>
+          <div class="sidemenu">
+            <i class="fa fa-users"></i>
+            <p>teams</p>
+          </div>
+          <div class="sidemenu">
+            <i class="fa fa-pencil-square"></i>
+            <p>schedule generator</p>
+          </div>
+          <div class="sidemenu">
+            <i class="fa fa-calendar"></i>
+            <p>weekly traning plans</p>
+          </div>
+          <div class="sidemenu">
+            <i class="fa fa-bar-chart"></i>
+            <p>team metrics</p>
+          </div>
+          <div class="sidemenu">
+            <i class="fa fa-cog"></i>
+            <p>customizations</p>
+          </div>
+            <div><h6>select your team</h6></div>
+          <div class="btn-group dropup">
+            <button type="button" class="btn btn-light dropdown-toggle btn1" data-toggle="dropdown">
+              Team Name
+            </button>
+          </div>
+          </div>
+    <!------------------------------second part-------------------->
+    <div class="second-part bg-light">
+        <!-----------------------navbar------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a href="#" class="fa fa-bars" id="menu-btn"></a>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item  nav-item-1">
+              <a class="nav-link" href="#">teams<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item nav-item-2">
+              <a class="nav-link" href="#">u23</a>
+            </li>
+            <li class="nav-item nav-item-2">
+              <a class="nav-link" href="#">u19</a>
+            </li>
+          </ul>
+          <div class="navbar-text">
+            <img src="img2.png">
+            <p>marcus</p>
+          </div>
+        </div>
+      </nav>
+       <div class="header">
+        <button type="button" class="btn btn-lg btn-success btn-1" id="login-btn">Add New Schedule</button>
+        <input type="search" placeholder="Search Your Schedule">
+      </div>
+      <!-----------------create new schedule form----------------->
+      <div class="login-form-container">
+        <form >
+          <h3>Create New Schedule</h3>
+          <div class="form-group">
+            <label for="inputAddress">Schedule Name</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Enter name">
+          </div>
+          <div class="form-row ">
+            <div class="form-group ">
+              <label for="inputCity">Start Date</label>
+              <input type="date" class="form-control" id="inputCity" placeholder="Select start date">
+            </div>
+            <div class="form-group">
+              <label for="inputCity">End Date</label>
+              <input type="date" class="form-control" id="inputCity" placeholder="select end date">
+            </div>
+            <div class="form-group">
+              <label for="inputCity">Enter No. of Weeks</label>
+              <input type="number" class="form-control" id="inputCity" placeholder="Enter no. of Weeks">
+            </div>
+          </div>
+          <div class="button2">
+            <button type="submit" class="btn btn-secondary btn-lg">Close</button>
+          <button type="submit" class="btn btn-success btn-lg">Create</button>
+          </div>
+        </form>
+    
+    </div>
+    <!-----------------------card-------------------->
+    <div id="accordion">
+
+    <div class=" card card-con">
+      <div class="card-1">
+        <div class="card-header-info" id="headindOne">
+          <h2>winter training Schedule</h2>
+          <p>4 weeks! 12 session</p>
+        </div>
+        <div class="card-icon">
+          <a href="#" class="fa fa-pencil icon-1"></a>
+          <a href="#" class="fa fa-trash icon-2"></a>
+          <a href="#collapseExample"  class="fa fa-caret-up icon-3"  data-toggle="collapse" data-target="#collapseOne"></a>
+        </div>
+      </div>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-2 card-body">
+            <div class="card-info-1">
+              <p>START DATES</p>
+              <h2>25 january 2020</h2>
+              </div>
+              <div class="info-2">
+                <p>END DATE</p>
+                <h2>19 feburary 2020</h2>
+  
+              </div>
+              <div class="header1">
+                <button type="button" class="btn btn-lg btn-success btn-1">updates</button>
+                </div>
+              </div>
+          <div class="buttons-1 ">
+            <button type="button" class="btn btn-outline-secondary btn-2 "><i class="fa fa-circle-thin"></i>  SUNDAY</button>
+            <button type="button" class="btn btn-outline-secondary btn2 "><i class="fa fa-circle-thin"></i>  MONDAY</button>
+            <button type="button" class="btn btn-outline-success btn2"><i class="fa fa-circle"></i>  TUESDAY</button>
+            <button type="button" class="btn btn-outline-secondary btn2"><i class="fa fa-circle-thin"></i>  WEDNESDAY</button>
+             <button type="button" class="btn btn-outline-secondary btn2"><i class="fa fa-circle-thin"></i> THURSDAY</button>
+            <button type="button" class="btn btn-outline-secondary btn2"><i class="fa fa-circle-thin"></i>  FRIDAY</button>
+            <button type="button" class="btn btn-outline-secondary btn2"><i class="fa fa-circle-thin"></i>  SATURDAY</button>
+            
+          </div>
+        </div>
+        <div class=" card card-con">
+          <div class="card-1">
+            <div class="card-header-info" id="headindTwo">
+              <h2>winter training Schedule</h2>
+              <p>4 weeks! 12 session</p>
+            </div>
+            <div class="card-icon">
+              <a href="#" class="fa fa-pencil icon-1"></a>
+              <a href="#" class="fa fa-trash icon-2"></a>
+              <a href="#collapseExample"  class="fa fa-caret-up icon-3"  data-toggle="collapse" data-target="#collapseTwo"></a>
+            </div>
+          </div>
+            </div>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-2 card-body">
+                <div class="card-info-1">
+                  <p>START DATES</p>
+                  <h2>25 january 2020</h2>
+                  </div>
+                  <div class="info-2">
+                    <p>END DATE</p>
+                    <h2>19 feburary 2020</h2>
+      
+                  </div>
+                  <div class="header1">
+                    <button type="button" class="btn btn-lg btn-success btn-1">updates</button>
+                    </div>
+                  </div>
+              <div class="buttons-1 ">
+                <button type="button" class="btn btn-outline-secondary btn-2"><i class="fa fa-circle-thin"></i>  SUNDAY</button>
+                <button type="button" class="btn btn-outline-secondary btn2 "><i class="fa fa-circle-thin"></i>  MONDAY</button>
+                <button type="button" class="btn btn-outline-success btn2"><i class="fa fa-circle"></i>  TUESDAY</button>
+                <button type="button" class="btn btn-outline-secondary btn2"><i class="fa fa-circle-thin"></i>  WEDNESDAY</button>
+                 <button type="button" class="btn btn-outline-secondary btn2"><i class="fa fa-circle-thin"></i> THURSDAY</button>
+                <button type="button" class="btn btn-outline-secondary btn2"><i class="fa fa-circle-thin"></i>  FRIDAY</button>
+                <button type="button" class="btn btn-outline-secondary btn2"><i class="fa fa-circle-thin"></i>  SATURDAY</button>
+                
+              </div>
+            </div>
+
+            <div class=" card card-con">
+              <div class="card-1">
+                <div class="card-header-info" id="headindThree">
+                  <h2>winter training Schedule</h2>
+                  <p>4 weeks! 12 session</p>
+                </div>
+                <div class="card-icon">
+                  <a href="#" class="fa fa-pencil icon-1"></a>
+                  <a href="#" class="fa fa-trash icon-2"></a>
+                  <a href="#collapseExample"  class="fa fa-caret-up icon-3"  data-toggle="collapse" data-target="#collapseThree"></a>
+                </div>
+              </div>
+                </div>
+                <div id="collapseThree" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-2 card-body">
+                    <div class="card-info-1">
+                      <p>START DATES</p>
+                      <h2>25 january 2020</h2>
+                      </div>
+                      <div class="info-2">
+                        <p>END DATE</p>
+                        <h2>19 feburary 2020</h2>
+          
+                      </div>
+                      <div class="header1">
+                        <button type="button" class="btn btn-lg btn-success btn-1">updates</button>
+                        </div>
+                      </div>
+                  <div class="buttons-1 ">
+                    <button type="button" class="btn btn-outline-secondary btn-2"><i class="fa fa-circle-thin"></i>  SUNDAY</button>
+                    <button type="button" class="btn btn-outline-secondary btn2 "><i class="fa fa-circle-thin"></i>  MONDAY</button>
+                    <button type="button" class="btn btn-outline-success btn2"><i class="fa fa-circle"></i>  TUESDAY</button>
+                    <button type="button" class="btn btn-outline-secondary btn2"><i class="fa fa-circle-thin"></i>  WEDNESDAY</button>
+                     <button type="button" class="btn btn-outline-secondary btn2"><i class="fa fa-circle-thin"></i> THURSDAY</button>
+                    <button type="button" class="btn btn-outline-secondary btn2"><i class="fa fa-circle-thin"></i>  FRIDAY</button>
+                    <button type="button" class="btn btn-outline-secondary btn2"><i class="fa fa-circle-thin"></i>  SATURDAY</button>
+                    
+                  </div>
+                </div>
+    </div>
+
+
+      
+        
+      </div>
+        
+     
+</section>
+
+
+<!-------------javascript-->
+<script src="script.js"></script>
+<!-- Bootstrap Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+  </body>
+</html>

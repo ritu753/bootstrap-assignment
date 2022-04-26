@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    transition:width none;
+}
+section{
+    display: flex;
+}
+/*-----------------sidenavnar---------------*/
+.sidenavbar{
+    color: #fff;
+    background: rgb(28, 211, 28);
+    width: 20%;
+    height: 100%;
+    z-index: 10000;
+}
+
+.sidenavbar h3{
+    text-align: center;
+    font-size: 18px;
+    padding: 8% 0;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 30px;
+    height: 20px;
+    margin: 4%;
+}
+
+.sidemenu{
+    display: flex;
+    align-items: center;
+}
+.sidemenu i{
+    font-size: 20px;
+    padding-left: 8%;
+}
+.sidemenu p{
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+h6{
+    margin-top: 180px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+.btn-group{
+    margin-left: 45px;
+    margin-bottom: 100%;
+}
+.btn{
+    font-size: 12px;
+    font-weight: 700;
+}
+.btn1{
+    width: 160px;
+    color: rgb(28, 211, 28);
+}
+/*---------------------second part-----------------------*/
+.second-part{
+    width: 100%;
+}
+#menu-btn{
+    color: rgb(28, 211, 28);
+    font-size: 18px;
+    padding-right: 20px;
+    display: none;
+}
+/*------------------------navbar--------------------*/
+.navbar{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.navbar-text{
+    display: flex;
+    align-items: center;
+
+}
+.navbar-text img{
+    width: 30px;
+}
+.navbar-text p{
+    font-size: 12px;
+    padding-left:10px ;
+    padding-top: 10px;
+    font-weight: 700;
+}
+.nav-item a{
+    font-size: 20px;
+    font-weight: 700;
+}
+.nav-item-1 a{
+    border-bottom: 4px solid rgb(28, 211, 28);
+
+}
+/*--------------------form------------------*/
+.login-form-container{
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top:20%; left:-100%;
+    z-index: 10000;
+    height:40%;
+    width:50%;
+}
+
+.login-form-container.active{
+    left:0;
+}
+.login-form-container h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+}
+.login-form-container form{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.1);
+    width:45rem;
+    padding:2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin:5rem 18rem;
+}
+
+label{
+    font-size: 15px;
+    font-weight: 700;
+}
+.form-group{
+    margin-left: 12px;
+}
+.button2 button{
+    padding: 15px 130px;
+    margin-left: 20px;
+}
+
+
+/*-------------------------header-------------------------*/
+.btn-1{
+    color: #fff;
+    margin: 3% 2%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header input{
+    border: .1px solid gray;
+    font-size: 12px;
+    padding: 3px 15px;
+    border-radius: 1px;
+    margin: 3% 2%;
+}
+/*--------------------------------card--------------------------*/
+.card-con{
+    margin: 3% 2% 0% 2%;
+}
+.card-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.card-header-info h2{
+    font-size: 15px;
+    padding-top: 18px;
+    padding-left: 18px;
+    font-weight: 700;
+
+}
+.card-header-info p{
+    font-size: 12px;
+    padding-left: 18px;
+    color: gray;
+
+}
+.card-icon a{
+    padding:0 10px;
+    font-size:22px ;
+}
+.icon-1{
+    color: gray;
+}
+.icon-2{
+    color: red;
+}
+.icon-3{
+    color: green;
+}
+.card-con1{
+    margin:  0 2%;
+}
+.card-2{
+    display: flex;
+}
+.card-info-1 p , .info-2 p{
+    font-size: 12px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.card-info-1 h2 , .info-2 h2{
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.info-2{
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+.header1{
+    margin-left: 60%;
+    margin-top: 10px;
+}
+.buttons-1{
+    margin-left:20px;
+    margin-bottom: 30px;
+}
+.btn2{
+    margin-left: 23px;
+    padding:15px 25px;
+}
+.btn-2{
+    padding:15px 25px;
+}
+
+/*------------------media query-----------------------------------------------------*/
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
+@media(max-width:768px){
+    .sidenavbar {
+        position: absolute;
+        top:5%; left: -100%;
+        background: green;
+        width: 300px;
+        }
+        #menu-btn{
+            display: inline-block;
+        }
+        .sidenavbar.active{
+            left: 0;
+        }
+        h6{
+            margin-top: 130px;
+        }
+        .btn-1{
+            margin: 2% 1%;
+        }
+        .header input{
+            padding: 3px 10px;
+        }
+        .card-header-info h2{
+            font-size: 11px;
+            padding-top: 10px;
+            padding-left: 8px;
+        
+        }
+        .card-header-info p{
+            font-size: 10px;
+            padding-left: 8px;
+            color: gray;
+        
+        }
+        .card-info-1 p , .info-2 p{
+            font-size: 8px;
+            padding-left: 8px;
+            padding-top: 10px;
+        }
+        .card-info-1 h2 , .info-2 h2{
+            font-size: 10px;
+            padding-left:5px;
+        }
+        .header1{
+            margin-left: 60px;
+        }
+        .buttons-1{
+            margin-left:6px;
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+        }
+        .btn2 , .btn-2{
+            margin-left:5px;
+            margin-bottom: 10px;
+            padding:5px 14px;
+        }
+        .login-form-container{
+            top:10%;
+         }
+        .login-form-container h3{
+            font-size: 15px;
+        }
+        .login-form-container form{
+            width:32rem;
+            padding:1rem;
+            margin:2rem 4rem;
+        }
+        label{
+            font-size: 12px;
+        }
+        .form-group{
+            margin-left: 2px;
+        }
+        .button2 button{
+            padding: 5px 25px;
+           
+        }
+        
+
+
+}
